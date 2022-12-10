@@ -80,62 +80,34 @@
                </div>
             </div>
          </div>
+
+
          <div class="destination-section">
             <div class="row">
-               <div class="col-lg-4 col-md-6">
-                  <article class="destination-item" style="background-image: url(assets/images/img1.jpg);">
-                     <div class="destination-content">
-                        <div class="rating-start-wrap">
-                           <div class="rating-start">
-                              <span style="width: 100%"></span>
+               <?php for ($x = 0; $x <= 2; $x++) {
+               ?>
+                  <div class="col-lg-4 col-md-6">
+                     <?php $img = preg_replace('/\s+/', '-', $data[$x]['place']); ?>
+                     <article class="destination-item" style="background-image: url(assets/images/<?= $img ?>.webp);">
+                        <div class="destination-content">
+                           <div class="rating-start-wrap">
+                              <div class="rating-start">
+                                 <span style="width: 100%"></span>
+                              </div>
                            </div>
+                           <span class="cat-link">
+                              <a href="package-offer.php"><?= $data[$x]['city']; ?></a>
+                           </span>
+                           <h3>
+                              <a href="package-detail.php"><?= $data[$x]['name']; ?></a>
+                           </h3>
+                           <p><?php echo implode(' ', array_slice(explode(' ', $data[$x]['overview']), 0, 10)) . "\n"; ?>....</p>
+                           <a style="padding:17px" href="package-detail.php?p=<?= $x  ?>" class="round-btn">Book Now</a>
+                           <a style="padding:17px" href="package-offer.php" class="round-btn">Learn More</a>
                         </div>
-                        <span class="cat-link">
-                           <a href="package-offer.php">ITALY</a>
-                        </span>
-                        <h3>
-                           <a href="package-detail.php">SAN MIGUEL</a>
-                        </h3>
-                        <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                     </div>
-                  </article>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <article class="destination-item" style="background-image: url(assets/images/img2.jpg);">
-                     <div class="destination-content">
-                        <div class="rating-start-wrap">
-                           <div class="rating-start">
-                              <span style="width: 100%"></span>
-                           </div>
-                        </div>
-                        <span class="cat-link">
-                           <a href="package-offer.php">Dubai</a>
-                        </span>
-                        <h3>
-                           <a href="package-detail.php">BURJ KHALIFA</a>
-                        </h3>
-                        <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                     </div>
-                  </article>
-               </div>
-               <div class="col-lg-4 col-md-6">
-                  <article class="destination-item" style="background-image: url(assets/images/img3.jpg);">
-                     <div class="destination-content">
-                        <div class="rating-start-wrap">
-                           <div class="rating-start">
-                              <span style="width: 100%"></span>
-                           </div>
-                        </div>
-                        <span class="cat-link">
-                           <a href="package-offer.php">Japan</a>
-                        </span>
-                        <h3>
-                           <a href="package-detail.php">KYOTO TEMPLE</a>
-                        </h3>
-                        <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                     </div>
-                  </article>
-               </div>
+                     </article>
+                  </div>
+               <?php }; ?>
             </div>
             <div class="section-btn-wrap text-center">
                <a href="package-offer.php" class="round-btn">More Destination</a>
@@ -301,80 +273,44 @@
          </div>
          <div class="offer-section">
             <div class="row">
-               <div class="col-md-6">
-                  <article class="offer-item" style="background-image: url(assets/images/img8.jpg);">
-                     <div class="offer-badge">
-                        UPTO <span>25%</span> off
-                     </div>
-                     <div class="offer-content">
-                        <div class="package-meta">
-                           <ul>
-                              <li>
-                                 <i class="fas fa-clock"></i>
-                                 7D/6N
-                              </li>
-                              <li>
-                                 <i class="fas fa-user-friends"></i>
-                                 pax: 10
-                              </li>
-                              <li>
-                                 <i class="fas fa-map-marker-alt"></i>
-                                 Malaysia
-                              </li>
-                           </ul>
+               <?php for ($x = 0; $x <= 1; $x++) {
+               ?>
+                  <div class="col-md-6">
+                     <?php $img = preg_replace('/\s+/', '-', $data[$x]['place']); ?>
+                     <article class="offer-item" style="background-image: url(assets/images/<?= $img ?>.webp);">
+                        <div class="offer-badge">
+                           UPTO <span>25%</span> off
                         </div>
-                        <h3>
-                           <a href="package.php">TOUR TO SATORINI</a>
-                        </h3>
-                        <p>
-                           Fusce hic augue velit wisi ips quibus dam pariatur, iusto.
-                        </p>
-                        <div class="price-list">
-                           price:
-                           <del>$1300 </del>
-                           <ins>$1105</ins>
+                        <div class="offer-content">
+                           <div class="package-meta">
+                              <ul>
+                                 <li>
+                                    <i class="fas fa-clock"></i>
+                                    <?= $data[$x]['duration']; ?>
+                                 </li>
+
+                                 <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <?= $data[$x]['city']; ?>
+                                 </li>
+                              </ul>
+                           </div>
+                           <h3>
+                              <a href="package.php"><?= $data[$x]['name']; ?></a>
+                           </h3>
+                           <p>
+                              <?php echo implode(' ', array_slice(explode(' ', $data[$x]['overview']), 0, 10)) . "\n"; ?>....
+                           </p>
+                           <div class="price-list">
+                              price:
+                              <del>$1300 </del>
+                              <ins><?= $data[$x]['price']; ?>$</ins>
+                           </div>
+                           <a href="package-detail.php?p=<?= $x  ?>" class="round-btn">Book Now</a>
                         </div>
-                        <a href="contact.php" class="round-btn">Book Now</a>
-                     </div>
-                  </article>
-               </div>
-               <div class="col-md-6">
-                  <article class="offer-item" style="background-image: url(assets/images/img9.jpg);">
-                     <div class="offer-badge">
-                        UPTO <span>17%</span> off
-                     </div>
-                     <div class="offer-content">
-                        <div class="package-meta">
-                           <ul>
-                              <li>
-                                 <i class="fas fa-clock"></i>
-                                 5D/4N
-                              </li>
-                              <li>
-                                 <i class="fas fa-user-friends"></i>
-                                 pax: 10
-                              </li>
-                              <li>
-                                 <i class="fas fa-map-marker-alt"></i>
-                                 Malaysia
-                              </li>
-                           </ul>
-                        </div>
-                        <h3>
-                           <a href="package.php">WEEKEND TO PARIS</a>
-                        </h3>
-                        <p>
-                           Fusce hic augue velit wisi ips quibus dam pariatur, iusto.
-                        </p>
-                        <div class="price-list">
-                           price:
-                           <del>$1100 </del>
-                           <ins>$900</ins>
-                        </div>
-                        <a href="contact.php" class="round-btn">Book Now</a>
-                     </div>
-                  </article>
-               </div>
+                     </article>
+                  </div>
+               <?php } ?>
             </div>
             <div class="section-btn-wrap text-center">
                <a href="package-offer.php" class="round-btn">VIEW ALL PACKAGES</a>
