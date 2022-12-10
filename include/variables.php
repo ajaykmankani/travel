@@ -1,7 +1,7 @@
 <?php
 
-$phone = 8888888888;
-$email = 'abc@gmail.com';
+$phone = 9899654892;
+$email = 'info@goinggly.com';
 $address = 'office no 10';
 
 
