@@ -22,7 +22,7 @@
                 <!-- <h4 class="text-center">Hay before you go please fill this form </h4> -->
                 <form id="contact-form" action="function.php" method="get" role="form">
                     <div class="error-container"></div>
-                    <img loading="lazy" src="assets/images/popup.jpg" alt="<?= $brandname ?>" style="
+                    <img loading="lazy" src="assets/images/popup2.jpg" alt="<?= $brandname ?>" style="
     padding-bottom: 25px;
 ">
                     <div class="row">
@@ -33,26 +33,26 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text" required>
+                                <!-- <label>Name</label> -->
+                                <input class="form-control form-control-name" name="name" id="name" placeholder="Name" type="text" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control form-control-email" name="email" id="email" placeholder="" type="email" required>
+                                <!-- <label>Email</label> -->
+                                <input class="form-control form-control-email" name="email" id="email" placeholder="Email" type="email" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Mobile</label>
-                                <input class="form-control form-control-name" name="name" id="tel" placeholder="" type="tel" required>
+                                <!-- <label>Mobile</label> -->
+                                <input class="form-control form-control-name" name="name" id="tel" placeholder="Mobile" type="tel" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Place to Visit</label>
-                                <input class="form-control form-control-email" name="place" id="text" placeholder="" type="text" required>
+                                <!-- <label>Place to Visit</label> -->
+                                <input class="form-control form-control-email" name="place" id="text" placeholder="Place to Visit" type="text" required>
                             </div>
                         </div>
                     </div>

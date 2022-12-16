@@ -143,7 +143,7 @@
     </div>
     <div class="bottom-footer">
         <div class="container">
-            <div class="copy-right text-center">Copyright &copy; 2022 | Developed & Marketed by <a href="https://www.mindyourads.com" target="_blank">MindYourAds</a> | All rights reserved.</div>
+            <div class="copy-right text-center">Copyright &copy; 2022 | Developed & Marketed by <a href="https://www.mindyourads.com" target="_blank" style="color:#00ff7e;">MindYourAds</a> | All rights reserved.</div>
         </div>
     </div>
 </footer>

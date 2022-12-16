@@ -199,8 +199,18 @@
                         <div class="header-btn">
                             <a onclick="popupopen()" class="round-btn">Book Now</a>
                         </div>
+
                     </div>
+
                 </div>
+                <marquee class=" " style="background-color: #0d9b4d;color: #fff; top: 92px;z-index: 80;">
+
+                    <div>Holidays Offer - Get Upto 50% Off on All Packages</div>
+
+                </marquee>
             </div>
-            <div class="mobile-menu-container"></div>
-        </header>
+
+
+    </div>
+
+    </header>

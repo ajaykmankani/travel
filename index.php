@@ -577,7 +577,7 @@
                   <p>Compare, Negotiate & Choose teh best from multiple options</p>
             </div>
             <div class="col-md-3">
-               <h5 class="sub-title"><i class="fas fa-project-diagram" style="font-size:45px;color: #fff;"></i></h5>
+               <h5 class="sub-title"><i class="fas fa-hotel" style="font-size:45px;color: #fff;"></i></h5>
                <h3 class="section-title" style="color: #fff;">Trusted Network</h2>
                   <p>of 2000+ Hotels Reliable & Authentic Travel Guides in Himalaya</p>
             </div>
