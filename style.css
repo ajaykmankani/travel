@@ -1135,7 +1135,7 @@ input[type=submit]:focus {
 }
 
 .section-heading {
-  margin-bottom: 45px;
+  margin-bottom: 33px;
 }
 
 .section-heading .sub-title {
@@ -1189,7 +1189,7 @@ input[type=submit]:focus {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 300px;
 }
 
 .social-icon ul {
@@ -3328,7 +3328,7 @@ input[type=submit]:focus {
 ******************************/
 .home-destination {
   padding-top: 115px;
-  padding-bottom: 115px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -4235,7 +4235,7 @@ input[type=submit]:focus {
 }
 
 .site-footer .top-footer {
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 }
 
 .site-footer .footer-logo {
@@ -4261,7 +4261,7 @@ input[type=submit]:focus {
 
 .site-footer .lower-footer {
   border-top: 1px solid rgba(255, 255, 255, 0.14);
-  padding-top: 35px;
+  padding-top: 17px;
 }
 
 .site-footer .lower-footer .social-icon {
@@ -4416,7 +4416,7 @@ input[type=submit]:focus {
 
 .footer-primary .widget .widget-title:after {
   background-color: #3A78C9;
-  content: "";
+  /* content: ""; */
   display: table;
   height: 2px;
   width: 50px;
@@ -7818,3 +7818,18 @@ input[type=submit]:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* custom css */
+
+/* blinker css */
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    color: red;
+  }
+}

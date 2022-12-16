@@ -96,25 +96,25 @@ $package = $data[$_GET["p"]]
                   <div class="sidebar">
                      <div class="booking-form-wrap">
                         <div class="booking-form-inner primary-bg">
-                           <h3>BOOKING FORM</h3>
-                           <p>Contact us to book your trip to <br><?= $package['place'] ?></p>
-                           <form method="get" class="booking-form">
+                           <h3>GET FREE QUOTATION</h3>
+                           <p>Contact us to book or customize your trip to <b><?= $package['place'] ?></b></p>
+                           <form method="get" action="function.php" class="booking-form">
                               <p>
-                                 <input type="text" name="name" placeholder="Your Name...">
+                                 <input type="text" name="name" placeholder="Your Name..." required>
                               </p>
                               <p>
-                                 <input type="tel" name="phone" placeholder="Your Mobile...">
+                                 <input type="tel" name="phone" placeholder="Your Mobile..." required>
                               </p>
                               <p>
                                  <input type="email" name="email" placeholder="Your Email...">
                               </p>
                               <p class="width-5">
-                                 <label>Checkin Date</label>
-                                 <input class="input-date-picker" type="text" name="s" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly">
+                                 <label>Journey Date</label>
+                                 <input class="input-date-picker" type="text" name="journey date" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly">
                               </p>
                               <p class="width-5">
-                                 <label>Checkout Date</label>
-                                 <input class="input-date-picker" type="text" name="s" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly">
+                                 <label>No. of persons</label>
+                                 <input class="" type="number" name="Number of Persons" placeholder="No. of Persons">
                               </p>
                               <p>
                                  <button type="submit" class="outline-btn outline-btn-white">INQUIRY NOW</button>

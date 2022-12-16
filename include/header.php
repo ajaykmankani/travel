@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- favicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" media="all">
@@ -33,7 +35,7 @@
 <body class="home">
     <div id="siteLoader" class="site-loader">
         <div class="preloader-content">
-            <img src="assets/images/loader1.gif" alt="">
+            <img src="assets/images/loader.webp" alt="">
         </div>
     </div>
     <div id="page" class="page">
@@ -44,7 +46,7 @@
                 <div class="container">
                     <div class="top-header-inner">
                         <div class="header-contact text-left">
-                            <a href="telto:01977259912">
+                            <a href="tel:<?= $phone; ?>">
                                 <i aria-hidden="true" class="icon icon-phone-call2"></i>
                                 <div class="header-contact-details d-none d-sm-block">
                                     <span class="contact-label">For Further Inquires :</span>
@@ -55,21 +57,21 @@
                         <div class="site-logo text-center">
                             <h1 class="site-title">
                                 <a href="index.php">
-                                    <img src="assets/images/site-logo.png" alt="Logo">
+                                    <img src="assets/images/site-logo.webp" alt="Logo">
                                 </a>
                             </h1>
                         </div>
                         <div class="header-icon text-right">
                             <div class="header-search-icon d-inline-block">
-                                <a href="#">
+                                <!-- <a href="#">
                                     <i aria-hidden="true" class="fas fa-search"></i>
-                                </a>
+                                </a> -->
                             </div>
-                            <!-- <div class="offcanvas-menu d-inline-block">
+                            <div class="offcanvas-menu d-inline-block">
                                 <a href="#">
                                     <i aria-hidden="true" class="icon icon-burger-menu"></i>
                                 </a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -90,16 +92,24 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?= $youtube ?>" target="_blank">
-                                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    <a href="<?= $instagram ?>" target="_blank">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i>
                                     </a>
                                 </li>
+
+                                <div class="d-none d-xs-block">
+                                    <a href="tel:<?= $phone; ?>">
+                                        <h5 class="header-contact-no">+91 <?= $phone; ?></h5>
+                                    </a>
+                                    </divi>
+
+
                             </ul>
                         </div>
                         <div class="navigation-container d-none d-lg-block">
                             <nav id="navigation" class="navigation">
                                 <ul>
-                                    <li class="menu-active">
+                                    <li>
                                         <a href="index.php">Home</a>
                                     </li>
                                     <li>
@@ -108,7 +118,7 @@
                                     <!-- <li>
                                         <a href="destination.php">destination</a>
                                     </li> -->
-                                    <li class="menu-item-has-children">
+                                    <!-- <li class="menu-item-has-children">
                                         <a href="javascript:void(0);">packages</a>
                                         <ul>
                                             <?php
@@ -122,7 +132,7 @@
                                                 </li>
                                             <?php } ?>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <!-- <li class="menu-item-has-children">
                                         <a href="index.php">Pages</a>
                                         <ul>
@@ -187,7 +197,7 @@
                             </nav>
                         </div>
                         <div class="header-btn">
-                            <a href="contact.php" class="round-btn">Book Now</a>
+                            <a onclick="popupopen()" class="round-btn">Book Now</a>
                         </div>
                     </div>
                 </div>

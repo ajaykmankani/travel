@@ -24,8 +24,8 @@
                            <h3>WE ARE BEST FOR TOURS & TRAVEL SINCE 1985 !</h3>
                         </div>
                      </figure>
-                     <h2>HOW Goinggly Travels ARE BEST FOR TRAVEL !</h2>
-                     <p>Goinggly Travels India Pvt Ltd Provides Customized Tour Packages For Travellers Across India As Per Their Convenience. Packages and Products Can be Customized as as Per Customer Pick and Drop City, Transport, Meal Plan and Budget Range</p>
+                     <h2>HOW <?=$brandname?> ARE BEST FOR TRAVEL !</h2>
+                     <p><?=$brandname?> India Pvt Ltd Provides Customized Tour Packages For Travellers Across India As Per Their Convenience. Packages and Products Can be Customized as as Per Customer Pick and Drop City, Transport, Meal Plan and Budget Range</p>
                   </div>
                   <div class="client-slider white-bg">
                      <figure class="client-item">

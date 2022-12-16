@@ -13,8 +13,8 @@ foreach ($_GET as $key => $data) {
 // send email
 if (mail("leads@goinggly.com", "Enquiry form your website", $msg)) {
 ?><script>
-        alert("Mail Sent Successfully");
-        location.href = "index.php";
+        // alert("Mail Sent Successfully");
+        location.href = "thankyou.php";
     </script><?php
             } else {
                 ?><script>
